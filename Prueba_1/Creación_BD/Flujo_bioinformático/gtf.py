@@ -1,6 +1,5 @@
 #!/usr/local/bin/anaconda3/bin/python 
 
-
 #Este Archivo tiene funciones que se usan para obtener, para cada transcrito, las coordenadas que tienen sus CDSs. Estas coordenadas las obtiene del archivo GTF para cada especie.
 #Recibe las listas por especie (listaEspecie) usando el archivo proteinortho_CDS.py. 
 #En estas listas vienen los transcritos que tienen un ortólogo en otra especie estudiada para poder mapear las coordenadas de sus CDSs en la secuencia de ADN.
