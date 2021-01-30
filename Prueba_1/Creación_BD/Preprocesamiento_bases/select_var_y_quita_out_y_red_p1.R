@@ -1,7 +1,4 @@
 install.packages("corrplot")
-setwd("/Users/paola.mateos/Desktop/Tesis_Mau")
-
-getwd()
 
 base <- read.csv("base.csv", header=TRUE)
 summary(base)
@@ -21,9 +18,6 @@ base <- read.csv("baseTest4_pr.csv", header=TRUE)
 base2<-base[,c(1:5,7,9,12)] #selección de variables
 names(base2)
 summary(base2)
-
-#base_scale<-scale(base2, center = TRUE, scale = TRUE)
-#summary(base_scale)
 
 base3<-base2[base2$CpG_ratio<=20,] #remoción de outliers -> Generación de la BD
 sd(base3$CpG_ratio)
