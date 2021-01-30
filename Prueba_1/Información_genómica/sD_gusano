@@ -1,0 +1,7 @@
+#!/bin/bash
+for i in I II III IV V X
+do
+wget "ftp://ftp.ensembl.org/pub/release-99/fasta/caenorhabditis_elegans/dna/Caenorhabditis_elegans.WBcel235.dna.chromosome."$i".fa.gz"
+gunzip "Caenorhabditis_elegans.WBcel235.dna.chromosome."$i".fa.gz"
+
+done
