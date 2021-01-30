@@ -1,0 +1,22 @@
+#!/bin/bash 
+
+#ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.gtf.gz
+#ftp://ftp.ensembl.org/pub/release-99/gtf/mus_musculus/Mus_musculus.GRCm38.99.gtf.gz
+#ftp://ftp.ensembl.org/pub/release-99/gtf/danio_rerio/Danio_rerio.GRCz11.99.gtf.gz
+#ftp://ftp.ensembl.org/pub/release-99/gtf/ciona_intestinalis/Ciona_intestinalis.KH.99.gtf.gz
+#ftp://ftp.ensembl.org/pub/release-99/gtf/caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235.99.gtf.gz
+#ftp://ftp.ensembl.org/pub/release-99/gtf/gallus_gallus/Gallus_gallus.GRCg6a.99.gtf.gz
+#ftp://ftp.ensembl.org/pub/release-99/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.28.99.gtf.gz
+#ftp://ftp.ensembl.org/pub/release-99/gtf/saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1.99.gtf.gz
+
+for i in homo_sapiens/Homo_sapiens.GRCh38 mus_musculus/Mus_musculus.GRCm38 danio_rerio/Danio_rerio.GRCz11 ciona_intestinalis/Ciona_intestinalis.KH caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235 gallus_gallus/Gallus_gallus.GRCg6a drosophila_melanogaster/Drosophila_melanogaster.BDGP6.28 saccharomyces_cerevisiae/Saccharomyces_cerevisiae.R64-1-1 
+do
+wget "ftp://ftp.ensembl.org/pub/release-99/gtf/"$i".99.gtf.gz"
+
+done
+
+for i in Homo_sapiens.GRCh38 Mus_musculus.GRCm38 Danio_rerio.GRCz11 Ciona_intestinalis.KH Caenorhabditis_elegans.WBcel235 Gallus_gallus.GRCg6a Drosophila_melanogaster.BDGP6.28 Saccharomyces_cerevisiae.R64-1-1
+do
+gunzip $i".99.gtf.gz"
+
+done

@@ -1,0 +1,25 @@
+#!/bin/bash                                                                                                                                                                                                 
+
+cd homo_sapiens
+./sD_humano
+cd ..
+cd levadura
+./sD_levadura
+cd ..
+cd mosca
+./sD_mosca
+cd ..
+cd pollo
+./sD_pollo
+cd ..
+cd raton
+./sD_raton
+cd ..
+cd zebra_fish
+./sD_pezCebra
+cd ..
+cd gusano
+./sD_gusano
+cd ..
+cd ciona_intestinalis
+./sD_ciona
