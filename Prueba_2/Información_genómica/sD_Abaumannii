@@ -1,0 +1,3 @@
+#!/bin/bash                                                                                                                                         
+wget "ftp://ftp.ensemblgenomes.org/pub/bacteria/release-49/fasta/bacteria_126_collection/acinetobacter_baumannii_ncgm_237_gca_000828795/dna/Acinetobacter_baumannii_ncgm_237_gca_000828795.ASM82879v1.dna.chromosome.Chromosome.fa.gz"
+gunzip "Acinetobacter_baumannii_ncgm_237_gca_000828795.ASM82879v1.dna.chromosome.Chromosome.fa.gz"
