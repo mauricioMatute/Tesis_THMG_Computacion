@@ -1,12 +1,7 @@
 
 install.packages("corrplot")
-setwd("/Users/paola.mateos/Desktop/Tesis_Mau/prueba_2")
+install.packages("factoextra")
 
-
-
-
-getwd()
-#
 x <- read.csv("base_train1_prueba_2.csv", header=TRUE)
 
 head(x)
@@ -43,7 +38,6 @@ sd(base2$ITP)
 dat.pca1$rotation
 matri<-dat.pca1$x
 
-install.packages("factoextra")
 library(ggplot2)
 library(factoextra)
 fviz_eig(dat.pca1)
