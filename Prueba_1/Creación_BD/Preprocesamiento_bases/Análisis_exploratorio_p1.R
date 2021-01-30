@@ -1,18 +1,11 @@
 
 install.packages("corrplot")
-setwd("/Users/paola.mateos/Desktop/Tesis_Mau")
+install.packages("factoextra")
 
-
-
-
-getwd()
-#
 base <- read.csv("base.csv", header=TRUE)
 
 head(base)
 base2<-base[,c(1:9,12)]
-
-table(base2$especie)
 
 library(corrplot)
 corrplot.mixed(cor(base2[,1:9]), order="hclust", tl.col="black")
@@ -26,7 +19,6 @@ base_hum <- base2[base2$especie == 6,]
 base_gus <- base2[base2$especie == 7,]
 
 corrplot.mixed(cor(base_lev[,1:9]), order="hclust", tl.col="black")
-
 corrplot.mixed(cor(base_ciona[,1:9]), order="hclust", tl.col="black")
 corrplot.mixed(cor(base_mosca[,1:9]), order="hclust", tl.col="black")
 corrplot.mixed(cor(base_pezC[,1:9]), order="hclust", tl.col="black")
@@ -49,8 +41,7 @@ summary(dat.pca1)
 dat.pca1$rotation
 matri<-dat.pca1$x
 
-
-install.packages("factoextra")
+                 
 library(ggplot2)
 library(factoextra)
 fviz_eig(dat.pca1)
