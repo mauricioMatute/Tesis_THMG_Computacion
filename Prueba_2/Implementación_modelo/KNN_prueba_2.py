@@ -27,7 +27,6 @@ def loadDataset(filename, tSet=[]):
                 dataset[x][y] = float(dataset[x][y])
             tSet.append(dataset[x])
  
- 
 def euclideanDistance(instance1, instance2):
     distance = 0
     for x in range(7):
